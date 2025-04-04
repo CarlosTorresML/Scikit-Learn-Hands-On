@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn import datasets
 from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import Normalizer, StandardScaler
+from sklearn.preprocessing import Normalizer, MinMaxScaler
 from sklearn.feature_selection import SelectKBest, chi2
 from sklearn.decomposition import PCA
 
@@ -17,9 +17,9 @@ si = SimpleImputer(missing_values=np.nan, strategy='mean')
 data_imputed = si.fit_transform(data.drop(columns=['class']))
 data_imputed = pd.DataFrame(data_imputed, columns=data.drop(columns=['class']).columns)
 
-# Scale numerical data using StandardScaler
-standard_scaler = StandardScaler()
-data_scaled = standard_scaler.fit_transform(data_imputed)
+# Scale numerical data using MinMaxScaler
+minmax_scaler = MinMaxScaler()
+data_scaled = minmax_scaler.fit_transform(data_imputed)
 data_scaled = pd.DataFrame(data_scaled, columns=data_imputed.columns)
 
 # Using chi2 to select the best 8 characteristics
@@ -43,4 +43,3 @@ data_normalized['class'] = data['class'].values
 
 # Saving to CSV file
 data_normalized.to_csv('wine_final.csv', index=False)
-
