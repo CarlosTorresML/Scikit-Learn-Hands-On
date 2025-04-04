@@ -14,8 +14,8 @@ The [Wine dataset](https://scikit-learn.org/stable/modules/generated/sklearn.dat
 2. **Imputation**  
    Missing values (simulated) are filled using the mean strategy with `SimpleImputer`.
 
-3. **Standardization**  
-   All numeric features are standardized using `StandardScaler`.
+3. **Scaling**  
+   - Scaled all features using `MinMaxScaler` to ensure all values are positive before applying `chi2`.
 
 4. **Feature Selection**  
    The 8 most relevant features are selected using `SelectKBest` with the `chi2` scoring function.
