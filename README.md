@@ -1,4 +1,4 @@
-# 🤖 Scikit-learn Exercises
+# Scikit-learn Exercises
 
 Welcome to my personal collection of exercises and mini-projects using [Scikit-learn](https://scikit-learn.org/), the most popular machine learning library in Python.
 
@@ -6,11 +6,11 @@ This folder is part of my learning journey through the **Programming for Machine
 
 ---
 
-## 📚 What's inside?
+## What's inside?
 
 Each Python script in this folder focuses on a specific skill or concept related to preprocessing, training, and evaluating machine learning models.
 
-### ✅ Topics covered so far:
+### Topics covered so far:
 
 - Handling missing values with `SimpleImputer`
 - Encoding categorical variables with `OneHotEncoder` and `OrdinalEncoder`
@@ -22,7 +22,7 @@ Each Python script in this folder focuses on a specific skill or concept related
 
 ---
 
-## 📂 Structure
+## Structure
 
 Each exercise or task is written as a standalone Python script, usually with:
 
@@ -32,7 +32,7 @@ Each exercise or task is written as a standalone Python script, usually with:
 
 ---
 
-## 🛠️ Tools used
+## Tools used
 
 - Python 3
 - pandas
@@ -41,7 +41,7 @@ Each exercise or task is written as a standalone Python script, usually with:
 
 ---
 
-## 🚀 How to run the scripts
+## How to run the scripts
 
 1. Clone the repository or download this folder.
 2. Make sure you have the required libraries:
@@ -51,13 +51,13 @@ Each exercise or task is written as a standalone Python script, usually with:
 
 ---
 
-## 🎯 Goal
+## Goal
 
 My goal with this folder is to build a solid foundation in data preprocessing and machine learning pipelines using scikit-learn — and to keep my code clean and ready for future projects or job applications.
 
 ---
 
-## 🧠 Still learning...
+## Still learning...
 
 I'm documenting and improving each script as I learn. If you have tips, suggestions, or feedback, feel free to open an issue or contact me.
 
